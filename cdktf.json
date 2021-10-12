@@ -1,0 +1,21 @@
+{
+  "language": "python",
+  "app": "python3 ./main.py",
+  "projectId": "1115ab44-d900-4594-a233-ac02c0995b35",
+  "terraformProviders": [
+    "aws@~> 3.59",
+    "google@~> 3.85",
+    "azurerm@~> 2.77",
+    "random@~> 3.1",
+    "cyrilgdn/postgresql@~> 1.14"
+  ],
+  "terraformModules": [
+    "terraform-aws-modules/vpc/aws@~> 3.7",
+    "terraform-aws-modules/rds/aws@~> 3.4"
+  ],
+  "codeMakerOutput": "imports",
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
